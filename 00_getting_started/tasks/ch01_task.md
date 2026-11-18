@@ -1,3 +1,12 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/练习"
+  - "#statu/等待复习"
+  - "#topic/基础"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 实操 01：摸清你的运行环境
 
 > 对应章节：[第 1 章 ComfyUI 是什么](../docs/ch01_what_is_comfyui.md) ｜ 预计耗时：10 分钟

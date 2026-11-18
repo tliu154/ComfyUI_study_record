@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 4 篇 控制与精修（Control & Refine）
 
 前置：[第 3 篇](../02_image_workflow/README.md)（图像工作流）。

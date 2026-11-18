@@ -1,3 +1,13 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/基础"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 1 章 ComfyUI 是什么（What is ComfyUI）
 
 > 前置：无 ｜ 对应实操：[`ch01_task.md`](../tasks/ch01_task.md)

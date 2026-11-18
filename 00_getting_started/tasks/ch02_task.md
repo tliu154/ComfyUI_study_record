@@ -1,3 +1,12 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/练习"
+  - "#statu/等待复习"
+  - "#topic/安装"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 实操 02：装好并启动 ComfyUI
 
 > 对应章节：[第 2 章 安装与启动](../docs/ch02_installation.md) ｜ 预计耗时：20~40 分钟

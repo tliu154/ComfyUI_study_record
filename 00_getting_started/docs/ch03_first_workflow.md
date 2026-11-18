@@ -1,3 +1,14 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/工作流"
+  - "#flag/重要"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 3 章 第一个工作流：文生图（First Workflow: Text-to-Image）
 
 > 前置：[ch02 安装](ch02_installation.md)（ComfyUI 已能打开、已放入 checkpoint） ｜ 对应实操：[`ch03_task.md`](../tasks/ch03_task.md)

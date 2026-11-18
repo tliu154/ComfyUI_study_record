@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 教学大纲（Syllabus）· 完整骨架
 
 **本文件是整个仓库唯一的章节清单与状态源。** 各篇 README 只写定位和实践方向，
@@ -99,33 +106,33 @@
 
 前置：第 2 篇。目标：把「文生图一个套路」扩展成图生图、局部重绘、放大这三类高频工作流。
 
-### 第 9 章 图生图（Image-to-Image） · [待写]
+### 第 9 章 图生图（Image-to-Image） · [已完成]
 
-> 文件：`02_image_workflow/docs/ch09_img2img.md` ｜ 实操：`02_image_workflow/tasks/ch09_task.md`
+> [教学](02_image_workflow/docs/ch09_img2img.md) · [实操](02_image_workflow/tasks/ch09_task.md)
 
 **本章子概念索引：** Load Image ｜ VAE Encode ｜ denoise 强度 ｜ 参考图 vs 重绘
 
 **节骨架：** 9.1 从一张已有图出发 ｜ 9.2 Load Image → VAE Encode 替换 EmptyLatentImage ｜ 9.3 denoise 决定改动幅度 ｜ 9.4 常见坑：尺寸不匹配
 
-### 第 10 章 局部重绘与蒙版（Inpainting & Mask） · [待写]
+### 第 10 章 局部重绘与蒙版（Inpainting & Mask） · [已完成]
 
-> 文件：`02_image_workflow/docs/ch10_inpainting.md` ｜ 实操：`02_image_workflow/tasks/ch10_task.md`
+> [教学](02_image_workflow/docs/ch10_inpainting.md) · [实操](02_image_workflow/tasks/ch10_task.md)
 
 **本章子概念索引：** 蒙版（Mask）· 绘制蒙版（Paint Mask）· SetLatentNoiseMask ｜ Inpaint Model Conditioning ｜ 只改选定区域
 
 **节骨架：** 10.1 局部重绘解决什么问题 ｜ 10.2 制作蒙版 ｜ 10.3 两条路线：SetLatentNoiseMask vs Inpaint 专用模型 ｜ 10.4 边缘融合与参数
 
-### 第 11 章 放大与高清修复（Upscaling & Hires-fix） · [待写]
+### 第 11 章 放大与高清修复（Upscaling & Hires-fix） · [已完成]
 
-> 文件：`02_image_workflow/docs/ch11_upscale.md` ｜ 实操：`02_image_workflow/tasks/ch11_task.md`
+> [教学](02_image_workflow/docs/ch11_upscale.md) · [实操](02_image_workflow/tasks/ch11_task.md)
 
 **本章子概念索引：** 潜空间放大（LatentUpscale）· 图像放大节点（Upscale Image / ESRGAN）· 二次采样（Hires-fix）· Ultimate SD Upscale
 
 **节骨架：** 11.1 为什么要分两段生成 ｜ 11.2 LatentUpscale + 二次 KSampler ｜ 11.3 用放大模型补细节 ｜ 11.4 显存与耗时权衡
 
-### 第 12 章 批处理与种子（Batch & Seed） · [待写]
+### 第 12 章 批处理与种子（Batch & Seed） · [已完成]
 
-> 文件：`02_image_workflow/docs/ch12_batch_seed.md` ｜ 实操：`02_image_workflow/tasks/ch12_task.md`
+> [教学](02_image_workflow/docs/ch12_batch_seed.md) · [实操](02_image_workflow/tasks/ch12_task.md)
 
 **本章子概念索引：** batch_size ｜ 固定种子 vs 随机ize ｜ 种子遍历（Seed Travel）· Primitive 节点 ｜ 批量产出管理
 

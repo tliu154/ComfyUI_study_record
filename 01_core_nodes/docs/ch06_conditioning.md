@@ -1,3 +1,13 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/提示词"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 6 章 提示词与条件（Prompt & Conditioning）
 
 > 前置：[ch05 加载器](ch05_loaders.md)（CLIP 从哪来） ｜ 对应实操：[`ch06_task.md`](../tasks/ch06_task.md)

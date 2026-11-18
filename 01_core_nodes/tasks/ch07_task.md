@@ -1,3 +1,12 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/练习"
+  - "#statu/等待复习"
+  - "#topic/潜空间"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 实操 07：尺寸、显存与 VAE 解码
 
 > 对应章节：[第 7 章 潜空间](../docs/ch07_latent.md) ｜ 预计耗时：25 分钟

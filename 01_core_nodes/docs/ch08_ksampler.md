@@ -1,3 +1,14 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/采样"
+  - "#flag/重要"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 8 章 采样引擎：KSampler 参数全解（Sampling & KSampler）
 
 > 前置：[ch04 心智模型](ch04_mental_model.md) · [ch06 条件](ch06_conditioning.md) · [ch07 潜空间](ch07_latent.md) ｜ 对应实操：[`ch08_task.md`](../tasks/ch08_task.md)

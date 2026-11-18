@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # ComfyUI 教学笔记（ComfyUI Study Record）
 
 一份**按学习依赖组织、长期演进**的 ComfyUI 笔记库。当前是框架阶段：
@@ -81,8 +88,10 @@ ComfyUI_study_record/
   - 框架（本文件 + SYLLABUS + CONTRIBUTING + NOTATION + 模板 + 自检脚本 + 各篇 README）
   - 第 1 篇 入门：3 章教学 + 3 份实操（[ch01](00_getting_started/docs/ch01_what_is_comfyui.md) / [ch02](00_getting_started/docs/ch02_installation.md) / [ch03](00_getting_started/docs/ch03_first_workflow.md)）
   - 第 2 篇 核心节点：5 章教学 + 5 份实操（[ch04 心智模型](01_core_nodes/docs/ch04_mental_model.md) / [ch05 加载器](01_core_nodes/docs/ch05_loaders.md) / [ch06 条件](01_core_nodes/docs/ch06_conditioning.md) / [ch07 潜空间](01_core_nodes/docs/ch07_latent.md) / [ch08 KSampler](01_core_nodes/docs/ch08_ksampler.md)）
+  - 第 3 篇 图像工作流：4 章教学 + 4 份实操（[ch09 图生图](02_image_workflow/docs/ch09_img2img.md) / [ch10 局部重绘](02_image_workflow/docs/ch10_inpainting.md) / [ch11 放大](02_image_workflow/docs/ch11_upscale.md) / [ch12 批处理](02_image_workflow/docs/ch12_batch_seed.md)）
+  - 全仓库笔记已按标签规范打标签（见 [CONTRIBUTING 0.5](CONTRIBUTING.md)），`tools/add_tags.py` 幂等可复跑
 - **已规划**：7 篇 / 26 章 + 附录 A~D，全部列在 [SYLLABUS.md](SYLLABUS.md)
-- **下一步**：按「一块一块填」的节奏，进入第 3 篇图像工作流，从 [第 9 章 图生图](02_image_workflow/docs/ch09_img2img.md) 开始
+- **下一步**：按「一块一块填」的节奏，进入第 4 篇控制与精修，从 [第 13 章 ControlNet](03_control_and_refine/docs/ch13_controlnet.md) 开始
 
 ## 填充一章的最短路径
 

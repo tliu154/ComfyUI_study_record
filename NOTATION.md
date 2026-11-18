@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 术语与节点名约定（Notation and Terminology）
 
 全仓库统一。**写新章节前扫一眼，避免同一个概念三种写法、节点名对不上界面。**

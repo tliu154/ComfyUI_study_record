@@ -1,3 +1,13 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/潜空间"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 7 章 潜空间：图像在没解码前长什么样（Latent Space）
 
 > 前置：[ch04 心智模型](ch04_mental_model.md)（数据类型） ｜ 对应实操：[`ch07_task.md`](../tasks/ch07_task.md)

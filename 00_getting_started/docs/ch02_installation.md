@@ -1,3 +1,13 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/安装"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 2 章 安装与启动（Installation & Launch）
 
 > 前置：[ch01 是什么](ch01_what_is_comfyui.md)（尤其 [1.4 硬件判断](../docs/ch01_what_is_comfyui.md#c01-04)） ｜ 对应实操：[`ch02_task.md`](../tasks/ch02_task.md)

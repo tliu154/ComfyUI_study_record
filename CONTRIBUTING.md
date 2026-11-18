@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 新增章节规范
 
 给自己看的约定。加一章走 5 步，保证整个仓库风格统一、链接不烂、随时能自检。
@@ -11,6 +18,39 @@
 - **不打 tags**：frontmatter 省略或留空，tag 由自己按需加
 - 章节互引用相对 Markdown 链接，例：`[ch08](01_core_nodes/docs/ch08_ksampler.md)`
 - 锚点引用用显式 ID（见下），不依赖 GitHub 自动 slug
+
+## 0.5 标签规范（每篇必打）
+
+沿用知识库标签规范（权威源 `D:\我的知识库\README.md`），**每篇笔记 frontmatter 都要有 `tags:`**：
+
+```markdown
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/采样"
+  - "#flag/重要"
+  - "#source/官方文档"
+created: YYYY-MM-DD
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
+```
+
+规则：层级 `英文/中文/中文`、全小写、无空格、最多 3 层、统一单数；标签带引号带 `#`。
+本仓库取值：
+
+| 类别 | 本仓库取值 |
+|---|---|
+| `#course/` | 一律 `计算机` |
+| `#type/` | docs → `笔记`；tasks → `练习`；框架/README → `资料` |
+| `#statu/` | 教学/实操 → `等待复习`；框架文件不标 |
+| `#topic/` | 按章号映射（ch08 采样 / ch09 图生图 …），见 `tools/add_tags.py` 的 `TOPIC_BY_CH` |
+| `#flag/` | 重点章的教学 → `重要`（ch03/ch04/ch08）|
+| `#source/` | 教学笔记 → `官方文档` |
+
+**不要手动逐个加标签**：写完一批笔记后跑 `python tools/add_tags.py`，它按路径规则自动打、幂等（重跑无副作用）、
+并保留已有标签与其它 frontmatter 字段。`_templates/` 是复制源，跳过不打。
 
 ## 1. 命名：全局章号
 

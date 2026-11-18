@@ -1,3 +1,12 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/练习"
+  - "#statu/等待复习"
+  - "#topic/提示词"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 实操 06：玩转正向与负向提示词
 
 > 对应章节：[第 6 章 提示词与条件](../docs/ch06_conditioning.md) ｜ 预计耗时：25 分钟

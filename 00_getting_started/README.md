@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 1 篇 入门（Getting Started）
 
 前置：无。目标：从零装好 ComfyUI，亲手搭出第一条文生图工作流并跑通出图。

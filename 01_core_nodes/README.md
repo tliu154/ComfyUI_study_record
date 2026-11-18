@@ -1,3 +1,10 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/资料"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 2 篇 核心节点（Core Nodes）
 
 前置：[第 1 篇](../00_getting_started/README.md)（能跑通第一条工作流）。

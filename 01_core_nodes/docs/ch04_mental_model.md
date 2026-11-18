@@ -1,3 +1,14 @@
+---
+tags:
+  - "#course/计算机"
+  - "#type/笔记"
+  - "#statu/等待复习"
+  - "#topic/节点"
+  - "#flag/重要"
+  - "#source/官方文档"
+created: 2026-11-18
+标签有哪些: "#type #course #statu #flag #topic #source"
+---
 # 第 4 章 工作流心智模型（Workflow Mental Model）
 
 > 前置：[ch03 第一个工作流](../../00_getting_started/docs/ch03_first_workflow.md)（你已经亲手连过一遍） ｜ 对应实操：[`ch04_task.md`](../tasks/ch04_task.md)
