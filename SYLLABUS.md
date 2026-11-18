@@ -23,25 +23,25 @@
 
 **本章子概念索引：** 文档结构（Document Structure）· 学习路径（Learning Path）· 笔记模板（Note Template）· 术语约定（Terminology）
 
-### 第 1 章 ComfyUI 是什么（What is ComfyUI） · [待写]
+### 第 1 章 ComfyUI 是什么（What is ComfyUI） · [已完成]
 
-> 文件：`00_getting_started/docs/ch01_what_is_comfyui.md` ｜ 实操：`00_getting_started/tasks/ch01_task.md`
+> [教学](00_getting_started/docs/ch01_what_is_comfyui.md) · [实操](00_getting_started/tasks/ch01_task.md)
 
 **本章子概念索引：** 节点式生成界面（Node-based Interface）· 与 WebUI 的区别（vs. Automatic1111）· 为什么学 ComfyUI（Why ComfyUI）· 适用人群与硬件门槛（Who & Hardware）
 
 **节骨架：** 1.1 一句话认识 ComfyUI ｜ 1.2 节点式 vs 一条表单 ｜ 1.3 为什么值得学 ｜ 1.4 硬件与运行环境
 
-### 第 2 章 安装与启动（Installation & Launch） · [待写]
+### 第 2 章 安装与启动（Installation & Launch） · [已完成]
 
-> 文件：`00_getting_started/docs/ch02_installation.md` ｜ 实操：`00_getting_started/tasks/ch02_task.md`
+> [教学](00_getting_started/docs/ch02_installation.md) · [实操](00_getting_started/tasks/ch02_task.md)
 
 **本章子概念索引：** 桌面版（Comfy Desktop）· Windows 便携包（Portable）· 源码安装（Manual / git）· 云端（Comfy Cloud）· comfy-cli · 首次启动与 `localhost:8188`
 
 **节骨架：** 2.1 四种安装方式对比 ｜ 2.2 Windows 便携包实战 ｜ 2.3 comfy-cli 捷径 ｜ 2.4 云端零安装方案 ｜ 2.5 启动、更新与目录结构
 
-### 第 3 章 第一个工作流：文生图（First Workflow: Text-to-Image） · [待写]
+### 第 3 章 第一个工作流：文生图（First Workflow: Text-to-Image） · [已完成]
 
-> 文件：`00_getting_started/docs/ch03_first_workflow.md` ｜ 实操：`00_getting_started/tasks/ch03_task.md`
+> [教学](00_getting_started/docs/ch03_first_workflow.md) · [实操](00_getting_started/tasks/ch03_task.md)
 
 **本章子概念索引：** 七个节点（Seven Nodes）· 连线规则（Links）· 加载 checkpoint ｜ 队列执行（Queue Prompt）· 保存与导出 JSON（Save / Export）
 
