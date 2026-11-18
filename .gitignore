@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ComfyUI 大文件不入库：模型、输出图、工作流缓存
+*.safetensors
+*.ckpt
+*.gguf
+*.pt
+*.bin
+output/
+inputs/
+models/
+
+# Obsidian
+.workspace/
+.trash/
