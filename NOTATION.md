@@ -15,7 +15,7 @@ created: 2026-11-18
 - 标题一律「中文（English）」，英文首字母实词大写
 - **节点名 / 端口名 / 控件名保持界面原文**（英文），用反引号包裹，例：`KSampler`、`ckpt_name`、`denoise`
 - 菜单路径用 `>` 连接，例：`model > loaders > Load Checkpoint`
-- 不打 tags；章节间用相对超链
+- frontmatter 按标签规范打 tags（course/type/topic/source 四类）；章节间用相对超链
 
 ## 2. 核心术语表（中英对照 + 人话）
 

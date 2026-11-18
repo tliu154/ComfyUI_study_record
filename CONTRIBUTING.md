@@ -14,7 +14,7 @@ created: 2026-11-18
 ## 0. Obsidian / GitHub 双兼容约定
 
 - 一律 `.md`，UTF-8，相对超链（不要绝对路径、不要用 `[[wikilink]]`），这样 GitHub 和 Obsidian 都能点开
-- **不打 tags**：frontmatter 省略或留空，tag 由自己按需加
+- **打 tags**：frontmatter 按 0.5 节标签规范填写（course/type/topic/source 四类），可用 `tools/add_tags.py` 幂等生成
 - 章节互引用相对 Markdown 链接，例：`[ch08](01_core_nodes/docs/ch08_ksampler.md)`
 - 锚点引用用显式 ID（见下），不依赖 GitHub 自动 slug
 

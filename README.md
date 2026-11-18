@@ -90,9 +90,10 @@ ComfyUI_study_record/
   - 第 3 篇 图像工作流：4 章教学 + 4 份实操（[ch09 图生图](02_image_workflow/docs/ch09_img2img.md) / [ch10 局部重绘](02_image_workflow/docs/ch10_inpainting.md) / [ch11 放大](02_image_workflow/docs/ch11_upscale.md) / [ch12 批处理](02_image_workflow/docs/ch12_batch_seed.md)）
   - 第 4 篇 控制与精修：4 章教学 + 4 份实操（[ch13 ControlNet](03_control_and_refine/docs/ch13_controlnet.md) / [ch14 一致性](03_control_and_refine/docs/ch14_reference.md) / [ch15 提示词进阶](03_control_and_refine/docs/ch15_prompt_advanced.md) / [ch16 节点技巧](03_control_and_refine/docs/ch16_node_skills.md)）
   - 第 5 篇 模型与 LoRA：4 章教学 + 4 份实操（[ch17 模型家族](04_models_and_lora/docs/ch17_model_families.md) / [ch18 模型文件](04_models_and_lora/docs/ch18_model_files.md) / [ch19 LoRA](04_models_and_lora/docs/ch19_lora.md) / [ch20 多模型工作流](04_models_and_lora/docs/ch20_workflow_variants.md)）
+  - 第 6 篇 视频与进阶：3 章教学 + 2 份实操（[ch21 视频入门](05_video_and_advanced/docs/ch21_video_basics.md) / [ch22 图生视频](05_video_and_advanced/docs/ch22_img2video.md) / [ch23 多模态概览](05_video_and_advanced/docs/ch23_multimodal.md)；ch23 为概览无实操）
   - 全仓库笔记已按标签规范打标签（见 [CONTRIBUTING 0.5](CONTRIBUTING.md)），`tools/add_tags.py` 幂等可复跑，标签为 course/type/topic/source 四类
 - **已规划**：7 篇 / 26 章 + 附录 A~D，全部列在 [SYLLABUS.md](SYLLABUS.md)
-- **下一步**：按「一块一块填」的节奏，进入第 6 篇视频与进阶，从 [第 21 章 视频生成入门](05_video_and_advanced/docs/ch21_video_basics.md) 开始
+- **下一步**：按「一块一块填」的节奏，进入第 7 篇生态与工程，从 [第 24 章 Manager 与自定义节点](06_ecosystem/docs/ch24_manager.md) 开始
 
 ## 填充一章的最短路径
 

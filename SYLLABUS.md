@@ -12,7 +12,7 @@ created: 2026-11-18
 - 学习依赖顺序：**入门 → 核心节点 → 图像工作流 → 控制与精修 → 模型与 LoRA → 视频与进阶 → 生态与工程**
 - 章号 01~26 保持稳定，作为跨文件引用的唯一标识；篇只是分组，不参与编号
 - 每章只有真正开写时才建 `.md` 文件；本文件里的「文件」列是**预定路径**，不是现存文件
-- 本仓库是 **Obsidian 库**：笔记一律 `.md`，frontmatter 不写 tags（tag 由自己手动加），章节之间用相对超链互引
+- 本仓库是 **Obsidian 库**：笔记一律 `.md`，frontmatter 按标签规范打 tags（见 [CONTRIBUTING 0.5](CONTRIBUTING.md)），章节之间用相对超链互引
 
 状态：`[已完成]` 教学 + 实操 + 自测通过 ｜ `[部分完成]` 只有部分节 ｜
 `[待写]` 仅规划 ｜ `[选读]` 低优先级，按需跳读
@@ -219,25 +219,25 @@ created: 2026-11-18
 
 前置：第 2、5 篇。目标：从静态图迈向动态视频，了解多模态扩展。本节多数为 `[选读]`，按需深入。
 
-### 第 21 章 视频生成入门（Video Generation Basics） · [待写]
+### 第 21 章 视频生成入门（Video Generation Basics） · [已完成]
 
-> 文件：`05_video_and_advanced/docs/ch21_video_basics.md` ｜ 实操：`05_video_and_advanced/tasks/ch21_task.md`
+> [教学](05_video_and_advanced/docs/ch21_video_basics.md) · [实操](05_video_and_advanced/tasks/ch21_task.md)
 
 **本章子概念索引：** 视频模型家族（AnimateDiff / Wan / HunyuanVideo）· 帧数与时长 ｜ 视频 Latent ｜ 显存挑战
 
 **节骨架：** 21.1 视频生成与图像的差别 ｜ 21.2 主流视频模型对比 ｜ 21.3 一段最小视频工作流 ｜ 21.4 帧数、尺寸与显存
 
-### 第 22 章 图生视频与运动控制（Image-to-Video） · [选读]
+### 第 22 章 图生视频与运动控制（Image-to-Video） · [已完成] [选读]
 
-> 文件：`05_video_and_advanced/docs/ch22_img2video.md` ｜ 实操：`05_video_and_advanced/tasks/ch22_task.md`
+> [教学](05_video_and_advanced/docs/ch22_img2video.md) · [实操](05_video_and_advanced/tasks/ch22_task.md)
 
 **本章子概念索引：** 首帧/首尾帧控制 ｜ 运动提示词 ｜ 相机控制 ｜ 时长与循环
 
 **节骨架：** 22.1 用一张图当视频起点 ｜ 22.2 首帧/尾帧条件 ｜ 22.3 运动描述与稳定性 ｜ 22.4 常见伪影与缓解
 
-### 第 23 章 多模态扩展概览：音频 / 3D / MCP · [选读]
+### 第 23 章 多模态扩展概览：音频 / 3D / MCP · [已完成] [选读]
 
-> 文件：`05_video_and_advanced/docs/ch23_multimodal.md`
+> [教学](05_video_and_advanced/docs/ch23_multimodal.md)（本章为概览，按规划无实操）
 
 **本章子概念索引：** 音频生成 ｜ 3D 生成 ｜ AI 智能体与 MCP ｜ Comfy CLI
 
@@ -304,5 +304,5 @@ created: 2026-11-18
 - **每章两份文件**：`docs/chNN_*.md`（教学）+ `tasks/chNN_task.md`（实操任务），同号
 - **节锚点**：`<a id="cNN-MM"></a>` + `### 8.2 ...（English）`，索引链 `#cNN-MM`
 - **单节结构**：概念定义 → 直觉类比 → 界面/参数 → 常见误区 → 对应实操链接
-- **不打 tags**：frontmatter 留空或省略；章节间用相对超链
+- **打 tags**：frontmatter 按 course/type/topic/source 四类规范填写；章节间用相对超链
 - 详细规则见 [CONTRIBUTING.md](CONTRIBUTING.md)，术语见 [NOTATION.md](NOTATION.md)
