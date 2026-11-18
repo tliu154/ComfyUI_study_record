@@ -108,6 +108,11 @@ created: 2026-11-18
 - GitHub：https://github.com/tliu154/ComfyUI_study_record
 - 写作规范：[CONTRIBUTING.md](../../CONTRIBUTING.md) ｜ 术语：[NOTATION.md](../../NOTATION.md)
 
+**姊妹仓库（3D 方向）**：
+- [ComfyUI 3D 建模 + Blender 基础](https://github.com/tliu154/Blender_study_record) ——
+  本仓库讲 2D 图像/视频主线；3D 生成（图生3D/文生3D）、模型导出、Blender 后处理在那边，
+  两库用超链衔接、内容不重复。
+
 > 资源链接会随时间变化，发现失效可按名称到对应站点搜索最新版本，或提 issue 反馈。
 
 ---
