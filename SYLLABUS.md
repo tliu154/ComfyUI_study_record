@@ -277,24 +277,24 @@ created: 2026-11-18
 
 ## 附录 → `90_appendix/`
 
-### 附录 A 节点速查表（Node Cheatsheet） · [待写]
+### 附录 A 节点速查表（Node Cheatsheet） · [已完成]
 
-> 文件：`90_appendix/docs/appA_node_cheatsheet.md`
+> [教学](90_appendix/docs/appA_node_cheatsheet.md)
 > 按用途分组：加载 / 条件 / 潜空间 / 采样 / 图像 / 控制 / 批处理 / 工具，每个节点一句话 + 典型接线。
 
-### 附录 B 参数速查（Parameter Cheatsheet） · [待写]
+### 附录 B 参数速查（Parameter Cheatsheet） · [已完成]
 
-> 文件：`90_appendix/docs/appB_parameter_cheatsheet.md`
+> [教学](90_appendix/docs/appB_parameter_cheatsheet.md)
 > sampler / scheduler / steps / CFG / denoise / seed 的选择表与常见组合，链回 [ch08](01_core_nodes/docs/ch08_ksampler.md)。
 
-### 附录 C 故障排查（Troubleshooting） · [待写]
+### 附录 C 故障排查（Troubleshooting） · [已完成]
 
-> 文件：`90_appendix/docs/appC_troubleshooting.md`
+> [教学](90_appendix/docs/appC_troubleshooting.md)
 > OOM、节点缺失、模型不识别、连线类型不匹配、出图全黑/全噪声、打不开网页等，按「现象 → 原因 → 处理」列。
 
-### 附录 D 资源与社区（Resources） · [待写]
+### 附录 D 资源与社区（Resources） · [已完成]
 
-> 文件：`90_appendix/docs/appD_resources.md`
+> [教学](90_appendix/docs/appD_resources.md)
 > 官方文档、Comfy Cloud、模型站、工作流社区、自定义节点仓库、本项目参考来源。
 
 ---

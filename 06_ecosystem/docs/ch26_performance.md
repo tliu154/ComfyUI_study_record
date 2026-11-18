@@ -8,7 +8,7 @@ created: 2026-11-18
 ---
 # 第 26 章 性能与显存优化（Performance & VRAM）
 
-> 前置：[ch18 模型文件与精度](../04_models_and_lora/docs/ch18_model_files.md) · [ch08 采样参数](../../01_core_nodes/docs/ch08_ksampler.md) ｜ 对应实操：[`ch26_task.md`](../tasks/ch26_task.md)
+> 前置：[ch18 模型文件与精度](../../04_models_and_lora/docs/ch18_model_files.md) · [ch08 采样参数](../../01_core_nodes/docs/ch08_ksampler.md) ｜ 对应实操：[`ch26_task.md`](../tasks/ch26_task.md)
 > 状态：`[已完成]` ｜ 所属篇：`06_ecosystem/` ｜ 难度：`[选读]`
 
 **一句话**：ComfyUI 跑不动，绝大多数时候是**显存（VRAM）不够**或**参数/模型太重**；
@@ -47,8 +47,8 @@ ComfyUI 的缓存像「用过的书先不收，留着下次用」——省了重
 
 **界面 / 参数**：影响显存的主要旋钮——
 - 出图尺寸：512×512 → 1024×1024，latent 面积翻 4 倍
-- `batch_size`：一次出几张，显存近似线性增加（[ch12](../02_image_workflow/docs/ch12_batch_seed.md)）
-- 模型精度：fp16 / fp8 / 量化，差别很大（[ch18](../04_models_and_lora/docs/ch18_model_files.md)）
+- `batch_size`：一次出几张，显存近似线性增加（[ch12](../../02_image_workflow/docs/ch12_batch_seed.md)）
+- 模型精度：fp16 / fp8 / 量化，差别很大（[ch18](../../04_models_and_lora/docs/ch18_model_files.md)）
 - 帧数：视频阶段显存 ≈ 图像 × 帧数（[ch21](../../05_video_and_advanced/docs/ch21_video_basics.md)）
 
 **常见误区**：
@@ -110,7 +110,7 @@ ComfyUI 的缓存像「用过的书先不收，留着下次用」——省了重
 attention 后端像**同一道题的不同解法**——结果一样，有的解法算得快、用的草稿纸少。
 
 **界面 / 参数**：怎么选——
-- **模型精度**：下载时选 fp8 / 量化版（文件名带 `fp8`、`gguf`、`Q*`），见 [ch18](../04_models_and_lora/docs/ch18_model_files.md)
+- **模型精度**：下载时选 fp8 / 量化版（文件名带 `fp8`、`gguf`、`Q*`），见 [ch18](../../04_models_and_lora/docs/ch18_model_files.md)
 - **启动参数**：如 `--xformers`、`--use-pytorch-cross-attention` 等切换 attention 后端（版本相关，装前查当前支持项）
 - 新版 ComfyUI 常能自动选较优后端；有问题再手动指定
 

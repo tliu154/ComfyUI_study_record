@@ -6,8 +6,8 @@ created: 2026-11-18
 ---
 # ComfyUI 教学笔记（ComfyUI Study Record）
 
-一份**按学习依赖组织、长期演进**的 ComfyUI 笔记库。当前是框架阶段：
-完整章节骨架 + 状态 + 写作规范，正文按「一块一块」逐章填充。
+一份**按学习依赖组织、长期演进**的 ComfyUI 笔记库。
+7 篇 / 26 章主线 + 附录 A~D 已全部填充完成，每章含教学 + 实操（附录为速查手册）。
 
 - GitHub：https://github.com/tliu154/ComfyUI_study_record
 - 本地：`D:\我的知识库\develop\ComfyUI_study_record`（同时是 Obsidian 库子目录）
@@ -22,6 +22,7 @@ created: 2026-11-18
 | [NOTATION.md](NOTATION.md) | 术语与节点名约定（全仓库统一） |
 | [`_templates/`](_templates/) | 章节模板 / 实操任务模板 |
 | [`tools/verify_all.py`](tools/verify_all.py) | 一键自检：相对链接 + 显式锚点 |
+| [`tools/add_tags.py`](tools/add_tags.py) / [`tools/fix_links.py`](tools/fix_links.py) | 幂等打标签 / 失效链接一键修 |
 | [`00_getting_started/`](00_getting_started/) | 第 1 篇 入门：是什么 / 安装 / 第一条工作流 |
 
 ## 学习依赖顺序
@@ -51,7 +52,7 @@ ComfyUI_study_record/
 ├── CONTRIBUTING.md        写作与校验规范
 ├── NOTATION.md            术语与节点名约定
 ├── _templates/            章节模板 / 实操任务模板
-├── tools/                 verify_all.py：全仓库自检
+├── tools/                 verify_all.py（全仓库自检）· add_tags.py（幂等打标）· fix_links.py（失效链接一键修）
 ├── 00_getting_started/    第1篇 入门
 ├── 01_core_nodes/         第2篇 核心节点
 ├── 02_image_workflow/     第3篇 图像工作流
@@ -92,9 +93,10 @@ ComfyUI_study_record/
   - 第 5 篇 模型与 LoRA：4 章教学 + 4 份实操（[ch17 模型家族](04_models_and_lora/docs/ch17_model_families.md) / [ch18 模型文件](04_models_and_lora/docs/ch18_model_files.md) / [ch19 LoRA](04_models_and_lora/docs/ch19_lora.md) / [ch20 多模型工作流](04_models_and_lora/docs/ch20_workflow_variants.md)）
   - 第 6 篇 视频与进阶：3 章教学 + 2 份实操（[ch21 视频入门](05_video_and_advanced/docs/ch21_video_basics.md) / [ch22 图生视频](05_video_and_advanced/docs/ch22_img2video.md) / [ch23 多模态概览](05_video_and_advanced/docs/ch23_multimodal.md)；ch23 为概览无实操）
   - 第 7 篇 生态与工程：3 章教学 + 3 份实操（[ch24 Manager](06_ecosystem/docs/ch24_manager.md) / [ch25 API](06_ecosystem/docs/ch25_api_automation.md) / [ch26 性能显存](06_ecosystem/docs/ch26_performance.md)）——**主线 26 章全部覆盖**
+  - 附录 A~D：[节点速查](90_appendix/docs/appA_node_cheatsheet.md) / [参数速查](90_appendix/docs/appB_parameter_cheatsheet.md) / [故障排查](90_appendix/docs/appC_troubleshooting.md) / [资源社区](90_appendix/docs/appD_resources.md)——**速查手册完成**
   - 全仓库笔记已按标签规范打标签（见 [CONTRIBUTING 0.5](CONTRIBUTING.md)），`tools/add_tags.py` 幂等可复跑，标签为 course/type/topic/source 四类
-- **主进度**：7 篇 / 26 章主线已全部填充完成；剩余 [附录 A~D](90_appendix/README.md) 为可选速查手册
-- **下一步**：按需填充附录 A~D（节点速查 / 参数速查 / 故障排查 / 资源社区），详见 [SYLLABUS.md](SYLLABUS.md)
+- **总进度**：**全部完成**——7 篇 / 26 章主线 + 附录 A~D 均已填充、打标、自检通过。详见 [SYLLABUS.md](SYLLABUS.md)
+- **接下来**：按需复习或实践；新内容先加入 [SYLLABUS.md](SYLLABUS.md) 规划再开写，不建空壳文件
 
 ## 填充一章的最短路径
 

@@ -69,7 +69,7 @@ created: 2026-11-18
 
 - 找不到 IPAdapter 节点 → 装节点包 + 下模型，见 [ch24](../../06_ecosystem/docs/ch24_manager.md)
 - 脸不像参考图 → 提高 weight，或用更清晰正脸参考图
-- 想同时锁姿态 → 叠加 ControlNet，见 [ch14 14.4](../docs/ch14_reference.md#c14-04) / [ch13](ch13_controlnet.md)
+- 想同时锁姿态 → 叠加 ControlNet，见 [ch14 14.4](../docs/ch14_reference.md#c14-04) / [ch13](../docs/ch13_controlnet.md)
 - 其它 → [附录 C 故障排查](../../90_appendix/docs/appC_troubleshooting.md)
 
 ## 下一步

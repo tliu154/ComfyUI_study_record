@@ -54,6 +54,9 @@ def main() -> int:
     planned: list[str] = []
     files = md_files()
 
+    # 仓库内所有 md 的文件名集合：用于区分「真·未写的预定章节」与「路径写错的已存在章节」
+    names_present = {f.name for f in files}
+
     # 预建每个文件的显式锚点集合（忽略代码块里的示例锚点）
     anchors_by_file: dict[Path, set[str]] = {}
     id_counts: dict[tuple[Path, str], int] = {}
@@ -80,7 +83,10 @@ def main() -> int:
             resolved = (f.parent / path_part).resolve()
             if not resolved.exists():
                 norm = path_part.replace("\\", "/")
-                if PLANNED_RE.search(norm):
+                target_name = norm.rstrip("/").split("/")[-1]
+                # 只有当目标章节文件在仓库里还不存在时，才算「预定未写」；
+                # 若同名文件已存在，则是相对路径写错，必须报错（fix_links.py 可一键修）。
+                if PLANNED_RE.search(norm) and target_name not in names_present:
                     planned.append(f"{f.relative_to(ROOT)} -> {target}")
                     continue
                 errors.append(f"[链接失效] {f.relative_to(ROOT)} -> {target}")

@@ -29,7 +29,7 @@ created: 2026-11-18
 3. **查许可**：回到你下载模型的页面（Hugging Face / Civitai），找到 License 字段，记录是否允许商用。
    （来源站见 [附录 D](../../90_appendix/docs/appD_resources.md)）
 
-4. **对照家族差异**：如果你只用过 SD1.5，读一遍 [ch20](ch20_workflow_variants.md) 里 SDXL/FLUX 的节点差异预告，
+4. **对照家族差异**：如果你只用过 SD1.5，读一遍 [ch20](../docs/ch20_workflow_variants.md) 里 SDXL/FLUX 的节点差异预告，
    建立「换家族＝换工作流」的预期。
 
 ## 验收标准

@@ -69,7 +69,7 @@ created: 2026-11-18
 
 ## 常见问题
 
-- LoRA 不在列表 → 放对 `models/loras/` 并按 R，见 [ch18](ch18_model_files.md#c18-03)
+- LoRA 不在列表 → 放对 `models/loras/` 并按 R，见 [ch18](../docs/ch18_model_files.md#c18-03)
 - LoRA 没效果 → 检查家族匹配、是否写了触发词、strength 是否为 0
 - 出图崩 → 降低 strength，或减少叠加的 LoRA 数量，见 [ch19 19.4](../docs/ch19_lora.md#c19-04)
 - 其它 → [附录 C 故障排查](../../90_appendix/docs/appC_troubleshooting.md)

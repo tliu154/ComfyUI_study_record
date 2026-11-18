@@ -8,7 +8,7 @@ created: 2026-11-18
 ---
 # 第 24 章 ComfyUI Manager 与自定义节点（Manager & Custom Nodes）
 
-> 前置：[ch03 第一个工作流](../../00_getting_started/docs/ch03_first_workflow.md) · [ch11 放大](../02_image_workflow/docs/ch11_upscale.md) ｜ 对应实操：[`ch24_task.md`](../tasks/ch24_task.md)
+> 前置：[ch03 第一个工作流](../../00_getting_started/docs/ch03_first_workflow.md) · [ch11 放大](../../02_image_workflow/docs/ch11_upscale.md) ｜ 对应实操：[`ch24_task.md`](../tasks/ch24_task.md)
 > 状态：`[已完成]` ｜ 所属篇：`06_ecosystem/` ｜ 难度：基础工具章
 
 **一句话**：ComfyUI 本体只带核心节点，绝大多数新功能来自**自定义节点（Custom Node）**；
@@ -40,8 +40,8 @@ Manager 就是管这些插件的「应用商店」——装、更新、卸载、
 **直觉类比**：ComfyUI 本体像**智能手机**，自带电话、短信等基础 App；
 自定义节点像**应用商店里下载的 App**，想要新功能就去装。
 Manager 就是那个**应用商店本身**——搜索、安装、更新、卸载都在这里一条龙。
-前面你用到的 [ch13 ControlNet](../03_control_and_refine/docs/ch13_controlnet.md)、
-[ch14 IP-Adapter](../03_control_and_refine/docs/ch14_reference.md) 背后都依赖自定义节点包。
+前面你用到的 [ch13 ControlNet](../../03_control_and_refine/docs/ch13_controlnet.md)、
+[ch14 IP-Adapter](../../03_control_and_refine/docs/ch14_reference.md) 背后都依赖自定义节点包。
 
 **界面 / 参数**：装好 Manager 后，ComfyUI 顶部菜单会多出这些入口——
 - `Manager` 主菜单：进入管理面板
@@ -52,7 +52,7 @@ Manager 就是那个**应用商店本身**——搜索、安装、更新、卸�
 **常见误区**：
 - ❌「ComfyUI 下载就自带所有节点」—— 不。核心节点之外大多要自己装，教程里的节点你画布上没有，通常就是缺包。
 - ❌「Manager 是官方强制组件」—— 它是社区项目，但已是事实标准，强烈建议第一个装。
-- ❌「自定义节点和模型是一回事」—— 不是。节点包是 Python 代码（放在 `custom_nodes/`），模型是权重文件（放在 `models/`），两者完全不同（[ch18](../04_models_and_lora/docs/ch18_model_files.md)）。
+- ❌「自定义节点和模型是一回事」—— 不是。节点包是 Python 代码（放在 `custom_nodes/`），模型是权重文件（放在 `models/`），两者完全不同（[ch18](../../04_models_and_lora/docs/ch18_model_files.md)）。
 
 > **够用边界**：记住「新功能 = 装自定义节点包，Manager = 管这些包的应用商店，代码放 `custom_nodes/`」即可。
 > Manager 内部实现、`comfy registry` 协议细节不用管。

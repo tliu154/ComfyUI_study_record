@@ -65,7 +65,7 @@ created: 2026-11-18
 
 ## 常见问题
 
-- 模板跑不起来 → 多半缺模型，看报错缺哪个就下哪个，见 [ch18](ch18_model_files.md#c18-03)
+- 模板跑不起来 → 多半缺模型，看报错缺哪个就下哪个，见 [ch18](../docs/ch18_model_files.md#c18-03)
 - FLUX 显存不够 → 用 fp8 模型 / 低显存模式（[ch26](../../06_ecosystem/docs/ch26_performance.md)）
 - 看不懂模板节点 → 回看 [ch20 20.3](../docs/ch20_workflow_variants.md#c20-03) 骨架
 - 其它 → [附录 C 故障排查](../../90_appendix/docs/appC_troubleshooting.md)
