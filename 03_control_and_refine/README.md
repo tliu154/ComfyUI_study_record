@@ -1,15 +1,15 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/资料"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 第 4 篇 控制与精修（Control & Refine）
 
 前置：[第 3 篇](../02_image_workflow/README.md)（图像工作流）。
 目标：从「靠提示词碰运气」到「精确控制构图、姿态、角色一致性」，并把变复杂的工作流整理干净。
 
+**状态**：`[已完成]` 4 章教学 + 4 份实操。
 **学完你能**：用 ControlNet 锁构图、用 IP-Adapter 保角色一致、用提示词权重细调、用 Reroute/Group/Mute 管理大工作流。
 
 ## 依赖

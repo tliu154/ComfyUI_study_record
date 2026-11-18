@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/资料"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 第 3 篇 图像工作流（Image Workflow）
 

@@ -1,12 +1,10 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/笔记"
-  - "#statu/等待复习"
   - "#topic/模型"
   - "#source/官方文档"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 第 5 章 加载器：模型从哪来（Loaders: Checkpoint / UNET / CLIP / VAE）
 

@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/资料"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 教学大纲（Syllabus）· 完整骨架
 
@@ -144,33 +143,33 @@ created: 2026-11-18
 
 前置：第 3 篇。目标：从「靠提示词碰运气」到「精确控制构图、姿态、角色一致性」。
 
-### 第 13 章 ControlNet：构图与姿态控制（ControlNet） · [待写]
+### 第 13 章 ControlNet：构图与姿态控制（ControlNet） · [已完成]
 
-> 文件：`03_control_and_refine/docs/ch13_controlnet.md` ｜ 实操：`03_control_and_refine/tasks/ch13_task.md`
+> [教学](03_control_and_refine/docs/ch13_controlnet.md) · [实操](03_control_and_refine/tasks/ch13_task.md)
 
 **本章子概念索引：** ControlNet 原理（够用）· 预处理器（Preprocessor：OpenPose / Depth / Canny / LineArt）· Apply ControlNet ｜ 强度与起止步数
 
 **节骨架：** 13.1 用一张参考图「框住」构图 ｜ 13.2 预处理器：从图提取骨架/深度/边缘 ｜ 13.3 连线与 ControlNet apply ｜ 13.4 strength / start / end 怎么调
 
-### 第 14 章 参考图与一致性（IP-Adapter & Reference） · [待写]
+### 第 14 章 参考图与一致性（IP-Adapter & Reference） · [已完成]
 
-> 文件：`03_control_and_refine/docs/ch14_reference.md` ｜ 实操：`03_control_and_refine/tasks/ch14_task.md`
+> [教学](03_control_and_refine/docs/ch14_reference.md) · [实操](03_control_and_refine/tasks/ch14_task.md)
 
 **本章子概念索引：** IP-Adapter ｜ Reference-Only ｜ 角色一致性（Character Consistency）· 与 ControlNet 的分工
 
 **节骨架：** 14.1 一致性问题是什么 ｜ 14.2 IP-Adapter 加载与接线 ｜ 14.3 权重与风格/身份的取舍 ｜ 14.4 和 ControlNet 怎么配合
 
-### 第 15 章 提示词进阶（Advanced Prompting） · [待写]
+### 第 15 章 提示词进阶（Advanced Prompting） · [已完成]
 
-> 文件：`03_control_and_refine/docs/ch15_prompt_advanced.md` ｜ 实操：`03_control_and_refine/tasks/ch15_task.md`
+> [教学](03_control_and_refine/docs/ch15_prompt_advanced.md) · [实操](03_control_and_refine/tasks/ch15_task.md)
 
 **本章子概念索引：** 权重语法（`(word:1.2)`）· 强调/弱化 ｜ 提示词顺序 ｜ 转义与标点 ｜ 常见写法误区
 
 **节骨架：** 15.1 为什么要给词加权 ｜ 15.2 权重语法与读法 ｜ 15.3 顺序与组合的影响 ｜ 15.4 易错点与可复现记录
 
-### 第 16 章 节点操作进阶（Node Skills） · [待写]
+### 第 16 章 节点操作进阶（Node Skills） · [已完成]
 
-> 文件：`03_control_and_refine/docs/ch16_node_skills.md` ｜ 实操：`03_control_and_refine/tasks/ch16_task.md`
+> [教学](03_control_and_refine/docs/ch16_node_skills.md) · [实操](03_control_and_refine/tasks/ch16_task.md)
 
 **本章子概念索引：** Reroute 连线整理 ｜ Node Group 分组 ｜ Mute / Bypass ｜ Primitive ｜ Note 备注 ｜ 快捷键与画布操作
 

@@ -6,17 +6,15 @@
 
 设计目标：
 - 「之后新增的笔记」也能一键覆盖：按文件路径规则推断标签，章号映射 topic。
-- 幂等：已有标签只合并去重，不重复添加；保留 frontmatter 里其它字段。
-- 遵循用户标签规范：英文/中文/中文、小写、无空格、最多3层、单数。
-  标签一律写成 ``  - "#a/b"``（带引号带 #，YAML 里 # 必须引号包裹）。
+- 幂等：已有标签合并去重；同时会**清理**下方 REMOVE_TAGS 里的旧标签与 REMOVE_FIELDS 里的旧字段，
+  所以改标签方案后重跑一次即可全库同步，不残留旧内容。
 
-标签方案（本仓库）：
-- course：全部笔记 ``#course/计算机``
+当前标签方案（2026-11-18 用户最新指定）：
+- course：全部笔记 ``#course/ComfyUI``（用户明确要求大写，作为本仓库特例覆盖通用"小写"规范）
 - type：docs → 笔记；tasks → 练习；README/SYLLABUS/CONTRIBUTING/NOTATION/篇README → 资料
-- statu：教学/实操笔记 → 等待复习（框架文件不标）
 - topic：按章号映射（见 TOPIC_BY_CH）
-- flag：重点章的教学 → 重要（ch03/ch04/ch08）
-- source：教学笔记 → 官方文档（本仓库内容依据）
+- source：教学笔记 → 官方文档
+- 已移除：#statu/等待复习、#flag/重要、标签有哪些 字段
 - _templates/ 跳过（模板是复制源，不打标签）
 """
 from __future__ import annotations
@@ -29,9 +27,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY = date.today().isoformat()
-HINT = '"#type #course #statu #flag #topic #source"'
 
-# 章号 → topic（小写、单数、无空格；专有名词保留小写英文）
+# 需要清除的旧标签（改方案后重跑一次即可从已打标的笔记里删掉）
+REMOVE_TAGS = {"#course/计算机", "#statu/等待复习", "#flag/重要"}
+# 需要清除的旧 frontmatter 字段（用户已移除的临时提醒字段）
+REMOVE_FIELDS = ("标签有哪些",)
+
+# 章号 → topic（单数、无空格；专有名词保留小写英文）
 TOPIC_BY_CH: dict[str, str] = {
     "01": "基础", "02": "安装", "03": "工作流", "04": "节点", "05": "模型",
     "06": "提示词", "07": "潜空间", "08": "采样", "09": "图生图", "10": "局部重绘",
@@ -40,7 +42,6 @@ TOPIC_BY_CH: dict[str, str] = {
     "21": "视频", "22": "视频", "23": "多模态", "24": "节点", "25": "接口", "26": "性能",
 }
 APPENDIX_TOPIC = {"A": "节点", "B": "参数", "C": "排错", "D": "资源"}
-IMPORTANT_CH = {"03", "04", "08"}
 
 
 def tags_for(rel: str) -> list[str] | None:
@@ -50,7 +51,7 @@ def tags_for(rel: str) -> list[str] | None:
     if "/_templates/" in f"/{rel}" or rel.startswith("_templates/"):
         return None
 
-    tags: list[str] = ["#course/计算机"]
+    tags: list[str] = ["#course/ComfyUI"]
     is_doc = "/docs/" in f"/{rel}"
     is_task = "/tasks/" in f"/{rel}"
 
@@ -62,10 +63,6 @@ def tags_for(rel: str) -> list[str] | None:
     else:
         tags.append("#type/资料")
 
-    # statu：仅教学/实操笔记
-    if is_doc or is_task:
-        tags.append("#statu/等待复习")
-
     # topic：按章号或附录字母
     m = re.search(r"ch(\d{2})", name)
     if m:
@@ -73,8 +70,6 @@ def tags_for(rel: str) -> list[str] | None:
         topic = TOPIC_BY_CH.get(ch)
         if topic:
             tags.append(f"#topic/{topic}")
-        if is_doc and ch in IMPORTANT_CH:
-            tags.append("#flag/重要")
     else:
         ma = re.search(r"app([A-D])_", name)
         if ma:
@@ -98,17 +93,15 @@ def split_frontmatter(text: str) -> tuple[list[str], list[str]]:
 
 
 def merge_tags(fm: list[str], wanted: list[str]) -> list[str]:
-    """把 wanted 合并进 frontmatter：保留已有 tags（去重+保持顺序），去掉 tags 块，
-    返回重写后的 frontmatter 行。"""
+    """重写 frontmatter：应用 wanted 标签、清除 REMOVE_TAGS / REMOVE_FIELDS，
+    保留其它字段（如 created），返回重写后的 frontmatter 行。"""
     existing: list[str] = []
     out: list[str] = []
     in_tags = False
-    has_tags_key = False
     for line in fm:
         stripped = line.strip()
         if re.match(r"^tags\s*:", stripped):
             in_tags = True
-            has_tags_key = True
             continue
         if in_tags:
             if stripped.startswith("- "):
@@ -118,25 +111,26 @@ def merge_tags(fm: list[str], wanted: list[str]) -> list[str]:
                 continue
             else:
                 in_tags = False
+        # 清除用户已移除的临时字段
+        if any(re.match(rf"^{field}\s*:", stripped) for field in REMOVE_FIELDS):
+            continue
         out.append(line)
 
-    # 合并：wanted 优先，再补已有标签里没重复的
+    # 合并：wanted 优先，再补已有标签里没重复的；过滤掉待清除旧标签
     merged: list[str] = []
     for t in wanted + existing:
-        if t and t not in merged:
+        if t and t not in merged and t not in REMOVE_TAGS:
             merged.append(t)
 
     # 重建 tags 块，放在最前
-    tag_block = ["tags:"] + [f'  - "{t}"' for t in merged]
+    new_fm = ["tags:"] + [f'  - "{t}"' for t in merged]
 
-    # 保留 created / 标签有哪些 字段习惯；缺则补
+    # 保留 created（缺则补）；不再添加"标签有哪些"
     joined = "\n".join(out)
     if not re.search(r"^created\s*:", joined, re.M):
-        tag_block.append(f"created: {TODAY}")
-    if not re.search(r"^标签有哪些\s*:", joined, re.M):
-        tag_block.append(f"标签有哪些: {HINT}")
+        new_fm.append(f"created: {TODAY}")
 
-    return tag_block + out
+    return new_fm + out
 
 
 def process(path: Path) -> bool:

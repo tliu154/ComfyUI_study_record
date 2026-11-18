@@ -1,9 +1,8 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/资料"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 新增章节规范
 
@@ -26,31 +25,30 @@ created: 2026-11-18
 ```markdown
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/笔记"
-  - "#statu/等待复习"
   - "#topic/采样"
-  - "#flag/重要"
   - "#source/官方文档"
 created: YYYY-MM-DD
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 ```
 
-规则：层级 `英文/中文/中文`、全小写、无空格、最多 3 层、统一单数；标签带引号带 `#`。
-本仓库取值：
+规则：层级 `英文/中文/中文`、无空格、最多 3 层、统一单数；标签带引号带 `#`。
+本仓库取值（2026-11-18 用户最新指定）：
 
 | 类别 | 本仓库取值 |
 |---|---|
-| `#course/` | 一律 `计算机` |
+| `#course/` | 一律 `ComfyUI`（用户明确指定大写，作为本仓库特例覆盖通用"小写"规范）|
 | `#type/` | docs → `笔记`；tasks → `练习`；框架/README → `资料` |
-| `#statu/` | 教学/实操 → `等待复习`；框架文件不标 |
 | `#topic/` | 按章号映射（ch08 采样 / ch09 图生图 …），见 `tools/add_tags.py` 的 `TOPIC_BY_CH` |
-| `#flag/` | 重点章的教学 → `重要`（ch03/ch04/ch08）|
 | `#source/` | 教学笔记 → `官方文档` |
 
-**不要手动逐个加标签**：写完一批笔记后跑 `python tools/add_tags.py`，它按路径规则自动打、幂等（重跑无副作用）、
-并保留已有标签与其它 frontmatter 字段。`_templates/` 是复制源，跳过不打。
+**已移除**（用户 2026-11-18 指定，不要再出现）：`#statu/等待复习`、`#flag/重要`、以及
+`标签有哪些: ...` 这个临时提醒字段。脚本会自动清理这些旧内容。
+
+**不要手动逐个加标签**：写完一批笔记后跑 `python tools/add_tags.py`，它按路径规则自动打、
+幂等（重跑无副作用）、清理旧标签，并保留 `created` 等其它 frontmatter 字段。
+`_templates/` 是复制源，跳过不打。
 
 ## 1. 命名：全局章号
 

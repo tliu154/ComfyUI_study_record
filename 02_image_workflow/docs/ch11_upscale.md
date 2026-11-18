@@ -1,12 +1,10 @@
 ---
 tags:
-  - "#course/计算机"
+  - "#course/ComfyUI"
   - "#type/笔记"
-  - "#statu/等待复习"
   - "#topic/放大"
   - "#source/官方文档"
 created: 2026-11-18
-标签有哪些: "#type #course #statu #flag #topic #source"
 ---
 # 第 11 章 放大与高清修复（Upscaling & Hires-fix）
 
