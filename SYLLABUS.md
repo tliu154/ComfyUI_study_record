@@ -181,33 +181,33 @@ created: 2026-11-18
 
 前置：第 2、3 篇。目标：认识主流模型家族，理解 FLUX/SDXL 工作流差异，用好 LoRA。
 
-### 第 17 章 模型家族（Model Families） · [待写]
+### 第 17 章 模型家族（Model Families） · [已完成]
 
-> 文件：`04_models_and_lora/docs/ch17_model_families.md` ｜ 实操：`04_models_and_lora/tasks/ch17_task.md`
+> [教学](04_models_and_lora/docs/ch17_model_families.md) · [实操](04_models_and_lora/tasks/ch17_task.md)
 
 **本章子概念索引：** SD 1.5 ｜ SDXL ｜ FLUX ｜ Z-Image / 国产新模型 ｜ 各自的最佳分辨率与版权/许可
 
 **节骨架：** 17.1 一张表看清主流模型 ｜ 17.2 SD1.5 与 SDXL ｜ 17.3 FLUX 的特点 ｜ 17.4 许可与商用注意
 
-### 第 18 章 模型文件与目录（Model Files & Paths） · [待写]
+### 第 18 章 模型文件与目录（Model Files & Paths） · [已完成]
 
-> 文件：`04_models_and_lora/docs/ch18_model_files.md` ｜ 实操：`04_models_and_lora/tasks/ch18_task.md`
+> [教学](04_models_and_lora/docs/ch18_model_files.md) · [实操](04_models_and_lora/tasks/ch18_task.md)
 
 **本章子概念索引：** safetensors / ckpt / gguf ｜ fp16 / fp8 / 量化 ｜ `models/` 子目录分工 ｜ 下载来源与校验 ｜ 版本管理
 
 **节骨架：** 18.1 常见模型文件格式 ｜ 18.2 精度与量化怎么选（显存权衡）｜ 18.3 目录结构与放错位置的排查 ｜ 18.4 下载来源与命名规范
 
-### 第 19 章 LoRA：风格与角色（LoRA） · [待写]
+### 第 19 章 LoRA：风格与角色（LoRA） · [已完成]
 
-> 文件：`04_models_and_lora/docs/ch19_lora.md` ｜ 实操：`04_models_and_lora/tasks/ch19_task.md`
+> [教学](04_models_and_lora/docs/ch19_lora.md) · [实操](04_models_and_lora/tasks/ch19_task.md)
 
 **本章子概念索引：** LoRA 是什么（够用）· LoraLoader ｜ 强度（model / clip strength）· 触发词 ｜ 多个 LoRA 叠加
 
 **节骨架：** 19.1 LoRA 解决什么问题 ｜ 19.2 LoraLoader 接线与强度 ｜ 19.3 触发词与权重配合 ｜ 19.4 多 LoRA 叠加与冲突
 
-### 第 20 章 多模型工作流对照（Workflow Variants） · [待写]
+### 第 20 章 多模型工作流对照（Workflow Variants） · [已完成]
 
-> 文件：`04_models_and_lora/docs/ch20_workflow_variants.md` ｜ 实操：`04_models_and_lora/tasks/ch20_task.md`
+> [教学](04_models_and_lora/docs/ch20_workflow_variants.md) · [实操](04_models_and_lora/tasks/ch20_task.md)
 
 **本章子概念索引：** SDXL 工作流 ｜ FLUX 工作流（双 CLIP + UNET）· Z-Image 模板 ｜ 模板工作流导入
 
