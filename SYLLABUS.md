@@ -249,25 +249,25 @@ created: 2026-11-18
 
 前置：第 1~3 篇。目标：把 ComfyUI 从「能玩」变成「稳定高效、可编程、可协作」。
 
-### 第 24 章 ComfyUI Manager 与自定义节点（Manager & Custom Nodes） · [待写]
+### 第 24 章 ComfyUI Manager 与自定义节点（Manager & Custom Nodes） · [已完成]
 
-> 文件：`06_ecosystem/docs/ch24_manager.md` ｜ 实操：`06_ecosystem/tasks/ch24_task.md`
+> [教学](06_ecosystem/docs/ch24_manager.md) · [实操](06_ecosystem/tasks/ch24_task.md)
 
 **本章子概念索引：** Manager 安装与面板 ｜ 自定义节点安装/更新/卸载 ｜ 缺失节点报错 ｜ Comfy Registry
 
 **节骨架：** 24.1 为什么需要 Manager ｜ 24.2 安装、搜索、更新节点包 ｜ 24.3 「节点缺失」排查 ｜ 24.4 安全与版本锁定
 
-### 第 25 章 API 与自动化（API & Automation） · [选读]
+### 第 25 章 API 与自动化（API & Automation） · [已完成] [选读]
 
-> 文件：`06_ecosystem/docs/ch25_api_automation.md` ｜ 实操：`06_ecosystem/tasks/ch25_task.md`
+> [教学](06_ecosystem/docs/ch25_api_automation.md) · [实操](06_ecosystem/tasks/ch25_task.md)
 
 **本章子概念索引：** 工作流 API 格式 vs UI 格式 ｜ `/prompt` 接口 ｜ 用脚本批量出图 ｜ comfy-cli / Comfy Router
 
 **节骨架：** 25.1 两种 JSON 格式的区别 ｜ 25.2 导出 API 格式工作流 ｜ 25.3 用 Python 提交任务（概念）｜ 25.4 云端 Router 与 CLI
 
-### 第 26 章 性能与显存优化（Performance & VRAM） · [选读]
+### 第 26 章 性能与显存优化（Performance & VRAM） · [已完成] [选读]
 
-> 文件：`06_ecosystem/docs/ch26_performance.md` ｜ 实操：`06_ecosystem/tasks/ch26_task.md`
+> [教学](06_ecosystem/docs/ch26_performance.md) · [实操](06_ecosystem/tasks/ch26_task.md)
 
 **本章子概念索引：** 显存不足（OOM）· 低显存模式 ｜ 精度 / 量化 ｜ attention 后端 ｜ 分块与卸载
 
