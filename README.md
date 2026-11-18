@@ -80,8 +80,9 @@ ComfyUI_study_record/
 - **已完成**：
   - 框架（本文件 + SYLLABUS + CONTRIBUTING + NOTATION + 模板 + 自检脚本 + 各篇 README）
   - 第 1 篇 入门：3 章教学 + 3 份实操（[ch01](00_getting_started/docs/ch01_what_is_comfyui.md) / [ch02](00_getting_started/docs/ch02_installation.md) / [ch03](00_getting_started/docs/ch03_first_workflow.md)）
+  - 第 2 篇 核心节点：5 章教学 + 5 份实操（[ch04 心智模型](01_core_nodes/docs/ch04_mental_model.md) / [ch05 加载器](01_core_nodes/docs/ch05_loaders.md) / [ch06 条件](01_core_nodes/docs/ch06_conditioning.md) / [ch07 潜空间](01_core_nodes/docs/ch07_latent.md) / [ch08 KSampler](01_core_nodes/docs/ch08_ksampler.md)）
 - **已规划**：7 篇 / 26 章 + 附录 A~D，全部列在 [SYLLABUS.md](SYLLABUS.md)
-- **下一步**：按「一块一块填」的节奏，进入第 2 篇核心节点，从 [第 4 章 心智模型](01_core_nodes/docs/ch04_mental_model.md) 开始
+- **下一步**：按「一块一块填」的节奏，进入第 3 篇图像工作流，从 [第 9 章 图生图](02_image_workflow/docs/ch09_img2img.md) 开始
 
 ## 填充一章的最短路径
 

@@ -53,41 +53,41 @@
 
 前置：第 1 篇。目标：把每条线的「为什么」搞懂，从照抄工作流变成能自己改。
 
-### 第 4 章 工作流心智模型（Workflow Mental Model） · [待写]
+### 第 4 章 工作流心智模型（Workflow Mental Model） · [已完成]
 
-> 文件：`01_core_nodes/docs/ch04_mental_model.md` ｜ 实操：`01_core_nodes/tasks/ch04_task.md`
+> [教学](01_core_nodes/docs/ch04_mental_model.md) · [实操](01_core_nodes/tasks/ch04_task.md)
 
 **本章子概念索引：** 节点/输入/输出/控件（Node / Input / Output / Widget）· 数据类型与颜色（Data Types & Colors）· 有向图执行（DAG Execution）· 一输出多连接规则
 
 **节骨架：** 4.1 节点的四个部件 ｜ 4.2 数据类型与颜色编码 ｜ 4.3 图是怎么被执行的 ｜ 4.4 连线的三条硬规则
 
-### 第 5 章 加载器：模型从哪来（Loaders: Checkpoint / UNET / CLIP / VAE） · [待写]
+### 第 5 章 加载器：模型从哪来（Loaders: Checkpoint / UNET / CLIP / VAE） · [已完成]
 
-> 文件：`01_core_nodes/docs/ch05_loaders.md` ｜ 实操：`01_core_nodes/tasks/ch05_task.md`
+> [教学](01_core_nodes/docs/ch05_loaders.md) · [实操](01_core_nodes/tasks/ch05_task.md)
 
 **本章子概念索引：** Load Checkpoint 三输出 ｜ UNET / Diffusion Model Loader ｜ CLIP / Text Encoder Loader ｜ VAE Loader ｜ 模型存放目录
 
 **节骨架：** 5.1 Load Checkpoint：一体三输出 ｜ 5.2 拆分加载：UNET + CLIP + VAE ｜ 5.3 模型目录与刷新（R 键）｜ 5.4 该用哪种加载方式
 
-### 第 6 章 提示词与条件（Prompt & Conditioning） · [待写]
+### 第 6 章 提示词与条件（Prompt & Conditioning） · [已完成]
 
-> 文件：`01_core_nodes/docs/ch06_conditioning.md` ｜ 实操：`01_core_nodes/tasks/ch06_task.md`
+> [教学](01_core_nodes/docs/ch06_conditioning.md) · [实操](01_core_nodes/tasks/ch06_task.md)
 
 **本章子概念索引：** CLIP Text Encode ｜ 正向/负向提示词（Positive / Negative）· Conditioning 数据类型 ｜ CLIP 双编码器（SDXL/FLUX 双 CLIP）
 
 **节骨架：** 6.1 文字怎么变成模型能懂的条件 ｜ 6.2 正向与负向 ｜ 6.3 Conditioning 这条线 ｜ 6.4 双 CLIP 与 CLIP Text Encode (SDXL)
 
-### 第 7 章 潜空间：图像在没解码前长什么样（Latent Space） · [待写]
+### 第 7 章 潜空间：图像在没解码前长什么样（Latent Space） · [已完成]
 
-> 文件：`01_core_nodes/docs/ch07_latent.md` ｜ 实操：`01_core_nodes/tasks/ch07_task.md`
+> [教学](01_core_nodes/docs/ch07_latent.md) · [实操](01_core_nodes/tasks/ch07_task.md)
 
 **本章子概念索引：** 潜变量（Latent）· EmptyLatentImage ｜ VAE Encode / Decode ｜ 尺寸与显存的关系 ｜ 为什么不在像素空间生成
 
 **节骨架：** 7.1 什么是潜空间（够用直觉）｜ 7.2 EmptyLatentImage：造一张空白底 ｜ 7.3 VAE Decode：从噪声到像素 ｜ 7.4 尺寸、宽高比与显存
 
-### 第 8 章 采样引擎：KSampler 参数全解（Sampling & KSampler） · [待写]
+### 第 8 章 采样引擎：KSampler 参数全解（Sampling & KSampler） · [已完成]
 
-> 文件：`01_core_nodes/docs/ch08_ksampler.md` ｜ 实操：`01_core_nodes/tasks/ch08_task.md`
+> [教学](01_core_nodes/docs/ch08_ksampler.md) · [实操](01_core_nodes/tasks/ch08_task.md)
 
 **本章子概念索引：** 采样器（Sampler）· 调度器（Scheduler）· steps · CFG · seed · denoise · 降噪循环直觉
 
